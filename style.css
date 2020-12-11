@@ -1,0 +1,111 @@
+:root {
+    --dark:black;
+    --light:white;
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    color: var(--light);
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    text-align: center;
+    margin: 0;
+    
+}
+p {
+    margin-bottom: 1.6em;
+}
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header{
+    background: #6200a1;
+    height: 110px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 2rem 0;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    }
+.main {
+    padding-top: 12rem;
+}
+
+.logo{
+    box-sizing: border-box;
+    float: left;
+
+}
+.menu-icon {
+    display: none;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navigation ul li a:hover{
+    background:#444;
+}
+.bg-dark {background-color: var(--dark) !important;}
+
+@media only screen and (max-width: 767px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+    .navigation ul li{
+        display: block;
+    }
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    nav ul li a1:hover{
+        color:#444; 
+}
+}
